@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<main class="p-5">
+
+  <h1 class="text-center text-lg text-green-500">HEllox</h1>
+
+  <div class="w-full h-10 bg-violet-200 border-2 border-violet-600 rounded-md my-4 p-2">
+    <p class="text-center font-mono font-extrabold">A div</p>
+  </div>
+
+  <!-- Layot -->
+  <div class="fixed w-10 h-10 bg-red-500 top-0"></div>
+
+  <div class="flex justify-between my-4">
+    <div class="h-16 w-16 rounded-full bg-blue-500"></div>
+    <div class="h-16 w-16 rounded-full bg-blue-500"></div>
+    <div class="h-16 w-16 rounded-full bg-blue-500"></div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-2 mt-3">
+    <div class="bg-violet-500 h-12"></div>
+    <div class="bg-violet-500 h-12"></div>
+    <div class="bg-violet-500 h-12"></div>
+  </div>
+
+  <!-- Responsive Text -->
+  <div class="md:block hidden">
+    <p>I will appear for device resolution > 768px</p>
+  </div>
+  <div class="max-md:block hidden">
+    <p>I will appear for device resolution < 768px</p>
+  </div>
+
+</main>
+
+</body>
+</html>
